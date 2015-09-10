@@ -75,6 +75,27 @@ Pronto, você adicionou as alterações e mudou a mensagem do *commit*. Sim, mud
 Antes era "Finalizado" e após a execução do comando `commit --amend -m "Agora
 está finalizado"` ele sobrescreveu seu último *commit*.
 
+## Deletando
+
+Ah! Deletar é fácil, é sou eu apagar o arquivo no meu diretório. **Quase isso**
+se você deletar o arquivo e este já estiver na *staging area*, ao rodar o
+comando `git add .` o git acusará um erro. Exemplo:
+
+```shell 
+:~/Help$ echo "Arquivo de teste" > file.txt
+:~/Help$ git add .
+:~/Help$ git status
+```
+```
+Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  	new file:   .README.md.swp
+	new file:   file.txt
+```
 ## Alterando
 
 Suponha que eu faça uma alteração no arquivo `README.md` um simples comodando
@@ -94,7 +115,7 @@ Changes not staged for commit:
 ```
 
 Com o comando `git diff` conseguimos ver o que foi alterado. Este só mostra a
-difereça do que está no *workin directory* com a *stage area*.
+difereça do que está no *workin directory* com a *staging area*.
 
 Agora precisamos passar do *working directory* para *staging area*
 
@@ -114,4 +135,6 @@ que esta na *staging area* com o *git directory*. Então, vamos esviar esta
 + `git log --pretty=oneline`
 + `git log -p -`*n*		Traz somente um número *n* de *commit*.
 + `git commit -a -m ""`	Adiciona (`-a`)e *comita* os arquivos (Use com moderação).
++ `git reset HEAD <file>` Remove o arquivo <file> da *staging area*.
++ `git checkout -- <file>`Remove as alterções do arquivo <file> em seu *working directory*.
 + `git pull`
