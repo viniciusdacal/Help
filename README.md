@@ -47,7 +47,10 @@ To https://github.com/RafaelDexter/Help.git
  * [new branch]      master -> master
  Branch master set up to track remote branch master from origin.
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3b9f42dde0418d277798e52db5b5a93aa6fee7b7
 ## Explicação rápida
 + `git add`				Copia do *working directory* para a *staging area*.
 + `git commit -m "mgs"`	Copia da *staging area* o *git directory*.
@@ -117,3 +120,4 @@ que esta na *staging area* com o *git directory*. Então, vamos esviar esta
 + `git log --pretty=oneline`
 + `git log -p -`*n*		Traz somente um número *n* de *commit*.
 + `git commit -a -m ""`	Adiciona (`-a`)e *comita* os arquivos (Use com moderação).
++ `git pull`
