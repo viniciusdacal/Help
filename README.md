@@ -23,20 +23,17 @@ Initialized empty Git repository in ~/Help/.git/
 :~/Help$ git add README.md
 :~/Help$ git commit -m "first commit"
 ```
-
 ```
 [master (root-commit) 0697c72] first commit
  1 file changed, 17 insertions(+)
   create mode 100644 README.md
 ```
-
 ```shell
 :~/Help$ git remote add origin https://github.com/RafaelDexter/GNUPlot.git
 :~/Help$ git push -u origin master
 Username for 'https://github.com': RafaelDexter
 Password for 'https://RafaelDexter@github.com': 
 ```
-
 ```
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
@@ -47,10 +44,6 @@ To https://github.com/RafaelDexter/Help.git
  * [new branch]      master -> master
  Branch master set up to track remote branch master from origin.
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b9f42dde0418d277798e52db5b5a93aa6fee7b7
 ## Explicação rápida
 + `git add`				Copia do *working directory* para a *staging area*.
 + `git commit -m "mgs"`	Copia da *staging area* o *git directory*.
@@ -81,6 +74,7 @@ commit --amend -m "Agora está finalizado"
 Pronto, você adicionou as alterações e mudou a mensagem do *commit*. Sim, mudou.
 Antes era "Finalizado" e após a execução do comando `commit --amend -m "Agora
 está finalizado"` ele sobrescreveu seu último *commit*.
+
 ## Alterando
 
 Suponha que eu faça uma alteração no arquivo `README.md` um simples comodando
@@ -114,7 +108,7 @@ que esta na *staging area* com o *git directory*. Então, vamos esviar esta
 "Aleração"`.
 
 ## Comando soltos
-->*Pega! Senão eles fogem.*->
+*Pega! Senão eles fogem.*
 + `git log`				Histórico de todos os *commits*.
 + `git log -p`			Espécie de junção do `git log` com o `git diff`.
 + `git log --pretty=oneline`
