@@ -88,6 +88,7 @@ Ah! Deletar é fácil, é sou eu apagar o arquivo no meu diretório. Exemplo:
 ```shell 
 :~/Help$ echo "Arquivo de teste" > file.txt
 :~/Help$ git add .
+:~/Help$ git commit -m "Teste de deletar arquivo"
 :~/Help$ git status
 ```
 ```
