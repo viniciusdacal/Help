@@ -44,7 +44,7 @@ To https://github.com/RafaelDexter/Help.git
  * [new branch]      master -> master
  Branch master set up to track remote branch master from origin.
 ```
-## Explicação rápida
+### Explicação rápida
 + `git add`				Copia do *working directory* para a *staging area*.
 + `git commit -m "mgs"`	Copia da *staging area* o *git directory*.
 + `git push` *de para*	 
@@ -87,15 +87,20 @@ comando `git add .` o git acusará um erro. Exemplo:
 :~/Help$ git status
 ```
 ```
-Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
-  	new file:   .README.md.swp
 	new file:   file.txt
 ```
+Ok, agora vamos deletá-lo.
+```shell 
+:~/Help$ rm file.txt
+:~/Help$ git add .
+:~/Help$ git status
+```
+
 ## Alterando
 
 Suponha que eu faça uma alteração no arquivo `README.md` um simples comodando
