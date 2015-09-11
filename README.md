@@ -77,9 +77,13 @@ está finalizado"` ele sobrescreveu seu último *commit*.
 
 ## Deletando
 
-Ah! Deletar é fácil, é sou eu apagar o arquivo no meu diretório. **Quase isso**
-se você deletar o arquivo e este já estiver na *staging area*, ao rodar o
-comando `git add .` o git acusará um erro. Exemplo:
+Eu sei que a partir da minha versão `git version 2.1.4` ele já corrigi um *bug*
+que acontecia quando você apagava um arquivo do diretório e tentava *add* e
+*comitat*.
+
+### A partir do diretório
+
+Ah! Deletar é fácil, é sou eu apagar o arquivo no meu diretório. Exemplo:
 
 ```shell 
 :~/Help$ echo "Arquivo de teste" > file.txt
