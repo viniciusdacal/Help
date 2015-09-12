@@ -203,7 +203,7 @@ Como dito no início, todas as alterções serão aplicadas no diretório `Help`
 agora eu quero brincar com ele porém não quero perder todo o trabalho já
 realizado. Ai que entra as *branches*. Quando se está trabalhando em um
 diretório a *branch* é a *master* (por padrão). Se minha inteção é ficar
-brincando (trabalhar com isto é uma diversão :D ), digo, testando novas
+brincando (trabalhar com isto é uma diversão :smiley: ), digo, testando novas
 funcionalidades, otimizações, etc, o melhor a fazer é criar uma *branch* para
 tal função.
 
@@ -241,6 +241,7 @@ comando de melcar:
 ```shel
 :~/Help$ git checkout master:~/Help$ git marge teste
 :~/Help$ git merge teste
+```
 **Observação:** *o comando `git commit -a -m "Implementações"` são dois comandos
 em um, ele é o mesmo que:`git add .` + `git commit-m "Implementações"`*
 
@@ -248,7 +249,6 @@ em um, ele é o mesmo que:`git add .` + `git commit-m "Implementações"`*
 `git` acusará que há um comflito em tal arquivo. No códico fonte aparecerá algo
 do tipo:
 
-```
 <<<<<<<< HEAD
 		ai aqui vai vir escrito o que tem no arquivo
 		da *branch master*
@@ -256,7 +256,6 @@ do tipo:
 		ai aqui vai vir escrito o que tem no arquivo
 		da *branch teste*
 >>>>>>>> teste
-```
 
 Apague uma das duas opções (da *master* ou da *teste*) e os <<< HEAD, === >>>teste
 e *comita* novamente: `git commit -a -m "Implementações com bug corrigido"`
