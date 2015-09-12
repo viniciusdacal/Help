@@ -249,13 +249,15 @@ em um, ele é o mesmo que:`git add .` + `git commit-m "Implementações"`*
 `git` acusará que há um comflito em tal arquivo. No códico fonte aparecerá algo
 do tipo:
 
+```
 <<<<<<<< HEAD
 		ai aqui vai vir escrito o que tem no arquivo
-		da *branch master*
+		da branch master
 ========
 		ai aqui vai vir escrito o que tem no arquivo
-		da *branch teste*
+		da branch teste
 >>>>>>>> teste
+```
 
 Apague uma das duas opções (da *master* ou da *teste*) e os <<< HEAD, === >>>teste
 e *comita* novamente: `git commit -a -m "Implementações com bug corrigido"`
