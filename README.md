@@ -283,3 +283,6 @@ Mas agora a *branch teste* não é mais necessária :/. Então apague-a.
 + `git pull`
 + `git tag`				Lista as *tegs* criadas
 + `git tag -a <nome> -m "msg"` Cria as *tags*. Use a opção `-a` pois ela salva mais informações na sua *tag*.
++ `git fetch <rep-remo>`	Explica
++ `git pull <remoto> <branch>`	Explica 
++ `git fetch origin && git pull origin master`
